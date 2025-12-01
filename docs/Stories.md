@@ -5,8 +5,8 @@ um: direkt mit meinen vorhandenen Titeln arbeiten zu können
 
 Akzeptanzkriterien
 [] Beim Start wird automatisch nach music_data.txt gesucht
-[] Vorhandene Titel werden geladen und angezeigt
-[] Falls keine Datei existiert, wird eine leere Bibliothek erstellt
+[X] Vorhandene Titel werden geladen und angezeigt
+[X] Falls keine Datei existiert, wird eine leere Bibliothek erstellt
 [] Erfolgsmeldung zeigt Anzahl der geladenen Titel an
 
 -----------------------------------------------------------------------------------------------------------
@@ -17,10 +17,10 @@ möchte ich: neue Songs mit allen Metadaten zur Bibliothek hinzufügen
 um: meine Sammlung zu erweitern  
 
 Akzeptanzkriterien
-[] Kann Titel, Künstler, Album und Genre eingeben
-[] Titel wird sofort in der Bibliothek gespeichert
-[] Erfolgsmeldung bestätigt das Hinzufügen
-[] Titel ist sofort in "Alle Titel anzeigen" sichtbar
+[X] Kann Titel, Künstler, Album und Genre eingeben
+[X] Titel wird sofort in der Bibliothek gespeichert
+[X] Erfolgsmeldung bestätigt das Hinzufügen
+[X] Titel ist sofort in "Alle Titel anzeigen" sichtbar
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -30,8 +30,8 @@ möchte ich: eine Übersicht aller Titel in meiner Bibliothek sehen
 um: schnell den Inhalt meiner Sammlung zu überblicken  
 
 Akzeptanzkriterien:
-[] Alle Titel werden nummeriert angezeigt
-[] Zu jedem Titel werden alle Metadaten angezeigt
+[X] Alle Titel werden nummeriert angezeigt
+[X] Zu jedem Titel werden alle Metadaten angezeigt
 [] Bei leerer Bibliothek erscheint Hinweis "Bibliothek ist leer"
 [] Gesamtanzahl der Titel wird angezeigt
 
@@ -85,8 +85,8 @@ möchte ich: durch ein klares Menü durch das Programm geführt werden
 um: mich nicht mit komplexen Befehlen auseinandersetzen zu müssen  
 
 Akzeptanzkriterien:
-[] Hauptmenü zeigt alle Optionen klar an
-[] Fehleingaben werden abgefangen mit Hinweis
-[] Nach jeder Aktion kehrt Programm zum Hauptmenü zurück
-[] Beenden ist jederzeit möglich
+[X] Hauptmenü zeigt alle Optionen klar an
+[X] Fehleingaben werden abgefangen mit Hinweis
+[X] Nach jeder Aktion kehrt Programm zum Hauptmenü zurück
+[X] Beenden ist jederzeit möglich
 
