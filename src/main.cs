@@ -134,4 +134,26 @@ class Program
         }
     }
 
+static void SearchSongs()
+    {
+        if (songs.Count == 0)
+        {
+            Console.WriteLine("Die Bibliothek ist leer.");
+            return;
+        }
+        Console.Write("Suchbegriff: ");
+        string search = Console.ReadLine().ToLower();
+        Console.WriteLine("\n--- Suchergebnisse ---");
+        bool found = false;
 
+        foreach (var song in songs)
+        {
+            if (song.Title.ToLower().Contains(search) || song.Artist.ToLower().Contains(search) ||
+                song.Album.ToLower().Contains(search) || song.Genre.ToLower().Contains(search))
+            {
+                song.Display();
+                found = true;
+            }
+        }
+        if (!found) Console.WriteLine("Keine Titel gefunden.");
+    }
