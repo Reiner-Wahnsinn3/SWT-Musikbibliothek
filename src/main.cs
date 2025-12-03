@@ -93,3 +93,18 @@ class Program
             Console.WriteLine($"Fehler beim Speichern: {ex.Message}");
         }
     }
+    static void ShowAllSongs()
+    {
+        if (songs.Count == 0)
+        {
+            Console.WriteLine("Die Bibliothek ist leer.");
+            return;
+        }
+        Console.WriteLine($"\n--- Alle Titel ({songs.Count}) ---");
+        for (int i = 0; i < songs.Count; i++)
+        {
+            Console.Write($"{i + 1}. ");
+            songs[i].Display();
+        }
+    }
+
