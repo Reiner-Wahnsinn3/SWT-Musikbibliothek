@@ -157,3 +157,37 @@ static void SearchSongs()
         }
         if (!found) Console.WriteLine("Keine Titel gefunden.");
     }
+
+    static void RemoveSong()
+    {
+        if (songs.Count == 0)
+        {
+            Console.WriteLine("Die Bibliothek ist leer.");
+            return;
+        }
+        ShowAllSongs();
+        Console.Write("Welchen Titel löschen? (Nummer): ");
+        
+        if (int.TryParse(Console.ReadLine(), out int index) && index >= 1 && index <= songs.Count)
+        {
+            Console.Write("Lösche: ");
+            songs[index - 1].Display();
+            Console.Write("Wirklich löschen? (j/n): ");
+            string confirmation = Console.ReadLine();
+
+            if (confirmation.ToLower() == "j")
+            {
+                songs.RemoveAt(index - 1);
+                SaveLibrary();
+                Console.WriteLine("Titel wurde gelöscht!");
+            }
+            else
+            {
+                Console.WriteLine("Löschvorgang abgebrochen.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Ungültige Nummer!");
+        }
+    }
