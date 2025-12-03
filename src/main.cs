@@ -93,6 +93,7 @@ class Program
             Console.WriteLine($"Fehler beim Speichern: {ex.Message}");
         }
     }
+    
     static void ShowAllSongs()
     {
         if (songs.Count == 0)
@@ -107,4 +108,30 @@ class Program
             songs[i].Display();
         }
     }
+
+    static void AddSong()
+    {
+        Console.WriteLine("\n--- Titel hinzufügen ---");
+        Console.Write("Titel: ");
+        string title = Console.ReadLine();
+        Console.Write("Künstler: ");
+        string artist = Console.ReadLine();
+        Console.Write("Album: ");
+        string album = Console.ReadLine();
+        Console.Write("Genre: ");
+        string genre = Console.ReadLine();
+        Console.Write("Dauer in Sekunden: ");
+        
+        if (int.TryParse(Console.ReadLine(), out int duration))
+        {
+            songs.Add(new Song(title, artist, album, genre, duration));
+            SaveLibrary();
+            Console.WriteLine("Titel wurde hinzugefügt!");
+        }
+        else
+        {
+            Console.WriteLine("Ungültige Dauer!");
+        }
+    }
+
 
